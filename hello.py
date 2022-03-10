@@ -62,7 +62,7 @@ print(name, age, "eves", sep="******")
 
 # print(name + " " + age + "eves")
 print("alma" + "korte")
-fruit1 = "alma"
+fruit1 = "meggy"
 fruit2 = "korte"
 print(fruit1 + fruit2)
 
@@ -71,3 +71,5 @@ print(name + " " + str(age) + " eves")
 print(f"A {name} emberke {age} eves")
 
 print(f"A 3 + 5 kifejezés értéke: {3 + 5}")
+
+print("Hello GitHub")
