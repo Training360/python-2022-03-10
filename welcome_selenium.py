@@ -15,4 +15,4 @@ def get_text_of_paragraph(driver):
 
 driver = go_to_page()
 content = get_text_of_paragraph(driver)
-assert content == "xxxThis is the second paragraph."
+assert content == "This is the second paragraph."
