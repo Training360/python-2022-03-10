@@ -1,4 +1,3 @@
-from lib2to3.pgen2 import driver
 from selenium import webdriver
 from selenium.webdriver.chrome.service import Service
 from webdriver_manager.chrome import ChromeDriverManager
@@ -40,4 +39,4 @@ def test_say_hello():
 def test_list():
     driver = go_to_page()
     items = get_list_items(driver)
-    assert items == ["Python", "HTML", "JavaScriptx"]
+    assert items == ["Python", "HTML", "JavaScript"]
