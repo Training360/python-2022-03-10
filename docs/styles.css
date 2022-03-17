@@ -9,3 +9,7 @@ h1 {
 #training-link {
     color: crimson;
 }
+
+p::first-line {
+    color: brown;
+}
