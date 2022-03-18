@@ -24,7 +24,8 @@ class LocationsMainPage:
         return self
 
     
-    def fill_form(self, name: str = "Home", coords: str = "1,1", interesting_at: str = "", tags: str = ""):
+    def fill_form(self, name: str = "Home", coords: str = "1,1", interesting_at: str = "", 
+            tags: str = ""):
         """Kitölti az űrlapot névvel, koordinátákkal, stb."""
         name_input = self.driver.find_element(By.ID, "location-name")
         name_input.send_keys(name)
