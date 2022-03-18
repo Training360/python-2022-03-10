@@ -19,6 +19,10 @@ class LocationsMainPage:
 
     
     def click_create_location_link(self):
+
+        WebDriverWait(self.driver, 10).until(
+            ec.visibility_of_element_located((By.LINK_TEXT, "Create location")))
+
         link = self.driver.find_element(By.LINK_TEXT, "Create location")
         link.click()
         return self
