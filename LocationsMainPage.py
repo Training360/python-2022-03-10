@@ -47,10 +47,9 @@ class LocationsMainPage:
         return self
         
     
-    def assert_text_on_message_panel(self, text):
+    def get_text_on_message_panel(self):
         message_div = self.driver.find_element(By.ID, "message-div")
-        assert message_div.text == text
-        return self
+        return message_div.text
 
     
     def get_error_message(self):

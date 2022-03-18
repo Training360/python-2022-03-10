@@ -6,8 +6,10 @@ def test_create(driver):
     page.open() \
         .click_create_location_link() \
         .fill_form("Work", "2,2") \
-        .click_on_create_location_button() \
-        .assert_text_on_message_panel("Location has been created")
+        .click_on_create_location_button()
+    
+    assert page.get_text_on_message_panel() == "Location has been created"
+
 
     # assert page.text_on_message_panel() == "Location has been created"
 
