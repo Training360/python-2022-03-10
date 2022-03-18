@@ -44,5 +44,15 @@ class LocationsMainPage:
     def click_on_create_location_button(self):
         create_location_button = self.driver.find_element(By.CSS_SELECTOR, "[value='Create location']")
         create_location_button.click()
+        return self
         
-        
+    
+    def assert_text_on_message_panel(self, text):
+        message_div = self.driver.find_element(By.ID, "message-div")
+        assert message_div.text == text
+        return self
+
+    
+    def get_error_message(self):
+        message_div = self.driver.find_element(By.CSS_SELECTOR, ".invalid-feedback:not([hidden = 'hidden'])")
+        return message_div.text
